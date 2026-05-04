@@ -11,7 +11,7 @@
 
 <body>
 
-  <!-- ENVELOPE OPENING -->
+  <!-- ENVELOPE -->
   <section id="envelopeScreen" class="envelope-screen">
     <div class="envelope-wrapper" id="openEnvelope">
       <div class="closed-envelope">
@@ -26,7 +26,7 @@
       </div>
 
       <p class="for-text">For</p>
-      <h2 id="guestPreview">Our Lovely Guest</h2>
+      <h2 id="guestPreview">...</h2>
     </div>
   </section>
 
@@ -35,67 +35,100 @@
 
     <div class="invitation-card">
 
+      <!-- INTRO -->
       <section class="intro">
         <p class="top-text">Together with their families</p>
 
         <h1>Tamarah</h1>
         <p class="and">&</p>
-        <h1>Your Groom</h1>
+        <h1>Ryan</h1>
 
         <p class="invite-text">joyfully invite you to celebrate their wedding</p>
 
         <div class="guest-name-box">
           <p>Dear</p>
-          <h2 id="guestName">Beautiful Guest</h2>
-          <span id="guestLimitText">We have reserved a seat in your honor.</span>
+          <h2 id="guestName">...</h2>
+          <span id="guestLimitText">...</span>
         </div>
 
         <p class="date">Saturday, February 27, 2027</p>
       </section>
 
+      <!-- DIVIDER -->
       <section class="divider-section reveal">
         <span></span>
         <p>an elegant evening of love, dinner, and celebration</p>
         <span></span>
       </section>
 
+      <!-- COLOR PALETTE -->
       <section class="invitation-section reveal">
         <p class="section-label">Color Palette</p>
         <h2>Soft Neutrals</h2>
 
-        <div class="palette">
-          <div style="background:#ffffff"></div>
-          <div style="background:#f6efe5"></div>
-          <div style="background:#e0cfb5"></div>
-          <div style="background:#b8a98d"></div>
-          <div style="background:#7c735f"></div>
+        <div class="palette-lines">
+          <div class="palette-row">
+            <span style="background:#fffaf3"></span>
+            <span style="background:#f3e7d6"></span>
+            <span style="background:#dfc8a9"></span>
+            <span style="background:#c5a77d"></span>
+            <span style="background:#a8895e"></span>
+          </div>
+
+          <div class="palette-row">
+            <span style="background:#eef3e8"></span>
+            <span style="background:#cfdabe"></span>
+            <span style="background:#9aaa7e"></span>
+            <span style="background:#6f7f55"></span>
+            <span style="background:#3f4a32"></span>
+          </div>
+
+          <div class="palette-row">
+            <span style="background:#f1e6d9"></span>
+            <span style="background:#d6bfa4"></span>
+            <span style="background:#b28d6b"></span>
+            <span style="background:#825d41"></span>
+            <span style="background:#4b3324"></span>
+          </div>
         </div>
       </section>
 
+      <!-- PHOTO BAND -->
+      <section class="invitation-section reveal">
+        <p class="section-label">Our Memories</p>
+        <h2>A Little Glimpse</h2>
+
+        <div class="photo-band">
+          <div class="photo-track">
+            <img src="images/photo1.jpg">
+            <img src="images/photo2.jpg">
+            <img src="images/photo3.jpg">
+            <img src="images/photo4.jpg">
+            <img src="images/photo5.jpg">
+
+            <img src="images/photo1.jpg">
+            <img src="images/photo2.jpg">
+            <img src="images/photo3.jpg">
+            <img src="images/photo4.jpg">
+            <img src="images/photo5.jpg">
+          </div>
+        </div>
+      </section>
+
+      <!-- SCHEDULE -->
       <section class="invitation-section reveal">
         <p class="section-label">Schedule</p>
         <h2>The Evening</h2>
 
         <div class="schedule">
-          <div>
-            <strong>4:30 PM</strong>
-            <span>Ceremony</span>
-          </div>
-          <div>
-            <strong>5:00 PM</strong>
-            <span>Cocktail Hour</span>
-          </div>
-          <div>
-            <strong>6:00 PM</strong>
-            <span>Dinner</span>
-          </div>
-          <div>
-            <strong>7:30 PM</strong>
-            <span>Dancing</span>
-          </div>
+          <div><strong>4:30 PM</strong><span>Ceremony</span></div>
+          <div><strong>5:00 PM</strong><span>Cocktail Hour</span></div>
+          <div><strong>6:00 PM</strong><span>Dinner</span></div>
+          <div><strong>7:30 PM</strong><span>Dancing</span></div>
         </div>
       </section>
 
+      <!-- LOCATION -->
       <section class="invitation-section reveal">
         <p class="section-label">Location</p>
         <h2>Venue Name</h2>
@@ -106,32 +139,48 @@
         <a href="https://maps.google.com" target="_blank" class="invitation-button">View Map</a>
       </section>
 
+      <!-- REGISTRY -->
       <section class="invitation-section reveal">
         <p class="section-label">Registry</p>
         <h2>With Love</h2>
-        <p class="soft-copy">
-          Your presence is the most beautiful gift.  
-          If you wish to bless us further, our registry is linked below.
-        </p>
-        <a href="#" class="invitation-button">View Registry</a>
+
+        <div class="registry-cubes">
+          <div class="registry-cube">
+            <h3>Deposit</h3>
+            <p>Bank deposit info upon request</p>
+          </div>
+
+          <div class="registry-cube">
+            <h3>Cash</h3>
+            <p>In person on wedding day</p>
+          </div>
+
+          <div class="registry-cube">
+            <h3>Zelle</h3>
+            <p><strong>Your Zelle Info</strong></p>
+          </div>
+        </div>
       </section>
 
-      <section id="rsvp" class="invitation-section reveal rsvp-section">
+      <!-- RSVP -->
+      <section class="invitation-section reveal rsvp-section">
         <p class="section-label">RSVP</p>
         <h2>Kindly Respond</h2>
 
         <form id="rsvpForm">
+
           <label>Name</label>
           <input type="text" id="nameInput" readonly>
 
           <label>Will you attend?</label>
           <select id="attendance" required>
             <option value="">Select one</option>
-            <option value="Yes">Yes, I will attend</option>
-            <option value="No">No, I cannot attend</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
           </select>
 
           <div id="yesOptions" class="hidden">
+
             <label>Meal Preference</label>
             <select id="meal">
               <option value="">Select meal</option>
@@ -141,9 +190,18 @@
 
             <label>Confirming For</label>
             <select id="guestCount"></select>
+
+            <!-- 🔥 EXTRA GUEST NAMES WILL APPEAR HERE -->
+            <div id="extraGuestsBox"></div>
+
           </div>
 
+          <!-- 🔥 NOTES BOX -->
+          <label>Notes</label>
+          <textarea id="notes" placeholder="Write anything here..."></textarea>
+
           <button type="submit">Send RSVP</button>
+
         </form>
       </section>
 
