@@ -14,6 +14,118 @@ const guests = {
   "john-smith": {
     name: "John Smith",
     allowedGuests: 1
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1
   }
 };
 
