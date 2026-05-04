@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wedding Invitation</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ENVELOPE OPENING -->
+  <section id="envelopeScreen" class="envelope-screen">
+    <div class="envelope-wrapper" id="openEnvelope">
+      <div class="closed-envelope">
+        <div class="envelope-back"></div>
+        <div class="envelope-letter">
+          <p>Open Me</p>
+        </div>
+        <div class="envelope-left"></div>
+        <div class="envelope-right"></div>
+        <div class="envelope-bottom"></div>
+        <div class="envelope-flap"></div>
+      </div>
+
+      <p class="for-text">For</p>
+      <h2 id="guestPreview">Our Lovely Guest</h2>
+    </div>
+  </section>
+
+  <!-- INVITATION -->
+  <main id="invitationPage" class="hidden invitation-background">
+
+    <div class="invitation-card">
+
+      <section class="intro">
+        <p class="top-text">Together with their families</p>
+
+        <h1>Tamarah</h1>
+        <p class="and">&</p>
+        <h1>Your Groom</h1>
+
+        <p class="invite-text">joyfully invite you to celebrate their wedding</p>
+
+        <div class="guest-name-box">
+          <p>Dear</p>
+          <h2 id="guestName">Patricia Arenas Ramirez</h2>
+          <span id="guestLimitText">We have reserved a seat in your honor.</span>
+        </div>
+
+        <p class="date">Saturday, February 27, 2027</p>
+      </section>
+
+      <section class="divider-section reveal">
+        <span></span>
+        <p>an elegant evening of love, dinner, and celebration</p>
+        <span></span>
+      </section>
+
+      <section class="invitation-section reveal">
+        <p class="section-label">Color Palette</p>
+        <h2>Soft Neutrals</h2>
+
+        <div class="palette">
+          <div style="background:#ffffff"></div>
+          <div style="background:#f6efe5"></div>
+          <div style="background:#e0cfb5"></div>
+          <div style="background:#b8a98d"></div>
+          <div style="background:#7c735f"></div>
+        </div>
+      </section>
+
+      <section class="invitation-section reveal">
+        <p class="section-label">Schedule</p>
+        <h2>The Evening</h2>
+
+        <div class="schedule">
+          <div>
+            <strong>4:30 PM</strong>
+            <span>Ceremony</span>
+          </div>
+          <div>
+            <strong>5:00 PM</strong>
+            <span>Cocktail Hour</span>
+          </div>
+          <div>
+            <strong>6:00 PM</strong>
+            <span>Dinner</span>
+          </div>
+          <div>
+            <strong>7:30 PM</strong>
+            <span>Dancing</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="invitation-section reveal">
+        <p class="section-label">Location</p>
+        <h2>Venue Name</h2>
+        <p class="soft-copy">
+          123 Wedding Avenue<br>
+          Houston, Texas
+        </p>
+        <a href="https://maps.google.com" target="_blank" class="invitation-button">View Map</a>
+      </section>
+
+      <section class="invitation-section reveal">
+        <p class="section-label">Registry</p>
+        <h2>With Love</h2>
+        <p class="soft-copy">
+          Your presence is the most beautiful gift.  
+          If you wish to bless us further, our registry is linked below.
+        </p>
+        <a href="#" class="invitation-button">View Registry</a>
+      </section>
+
+      <section id="rsvp" class="invitation-section reveal rsvp-section">
+        <p class="section-label">RSVP</p>
+        <h2>Kindly Respond</h2>
+
+        <form id="rsvpForm">
+          <label>Name</label>
+          <input type="text" id="nameInput" readonly>
+
+          <label>Will you attend?</label>
+          <select id="attendance" required>
+            <option value="">Select one</option>
+            <option value="Yes">Yes, I will attend</option>
+            <option value="No">No, I cannot attend</option>
+          </select>
+
+          <div id="yesOptions" class="hidden">
+            <label>Meal Preference</label>
+            <select id="meal">
+              <option value="">Select meal</option>
+              <option value="Carnivore">Carnivore</option>
+              <option value="Vegetarian">Vegetarian</option>
+            </select>
+
+            <label>Confirming For</label>
+            <select id="guestCount"></select>
+          </div>
+
+          <button type="submit">Send RSVP</button>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
