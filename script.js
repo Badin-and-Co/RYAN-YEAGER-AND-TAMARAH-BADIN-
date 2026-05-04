@@ -3,156 +3,27 @@ const guests = {
     name: "Patricia Arenas Ramirez",
     allowedGuests: 3
   },
+
   "maria-lopez": {
     name: "Maria Lopez",
     allowedGuests: 1
   },
+
   "andrea-garcia-plus-one": {
-    name: "Andrea Garcia + Guest",
+    name: "Andrea Garcia",
     allowedGuests: 2
   },
-  "john-smith": {
-    name: "John Smith",
-    allowedGuests: 1
+
+  "family-example-plus-two": {
+    name: "Family Example",
+    allowedGuests: 3
   },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1
+
+  "family-example-plus-three": {
+    name: "Family Example",
+    allowedGuests: 4
   }
 };
-
-/*
-HOW TO ADD YOUR 135 GUESTS:
-
-Copy this format:
-
-"first-last": {
-  name: "First Last",
-  allowedGuests: 1
-},
-
-or for plus one:
-
-"first-last-plus-one": {
-  name: "First Last + Guest",
-  allowedGuests: 2
-},
-
-Then send that person this link:
-
-index.html?guest=first-last
-
-Example:
-index.html?guest=camila-pastrana
-*/
 
 const params = new URLSearchParams(window.location.search);
 const guestKey = params.get("guest");
@@ -181,11 +52,9 @@ guestPreview.textContent = `For ${currentGuest.name}`;
 guestName.textContent = currentGuest.name;
 nameInput.value = currentGuest.name;
 
-if (currentGuest.allowedGuests === 2) {
-  guestLimitText.textContent = "We have reserved 2 seats in your honor.";
-} else {
-  guestLimitText.textContent = "We have reserved 1 seat in your honor.";
-}
+/* THIS FIXES THE TOP SEAT NUMBER */
+guestLimitText.textContent =
+  `We have reserved ${currentGuest.allowedGuests} seat${currentGuest.allowedGuests > 1 ? "s" : ""} in your honor.`;
 
 function buildGuestCountOptions() {
   guestCount.innerHTML = "";
@@ -214,8 +83,51 @@ attendance.addEventListener("change", () => {
     yesOptions.classList.add("hidden");
     meal.required = false;
     meal.value = "";
+    clearExtraGuestFields();
   }
 });
+
+guestCount.addEventListener("change", () => {
+  buildExtraGuestFields();
+});
+
+function clearExtraGuestFields() {
+  const extraGuestsBox = document.getElementById("extraGuestsBox");
+  if (extraGuestsBox) {
+    extraGuestsBox.innerHTML = "";
+  }
+}
+
+function buildExtraGuestFields() {
+  const extraGuestsBox = document.getElementById("extraGuestsBox");
+  if (!extraGuestsBox) return;
+
+  extraGuestsBox.innerHTML = "";
+
+  const totalGuestsSelected = Number(guestCount.value);
+  const extraGuestAmount = totalGuestsSelected - 1;
+
+  if (extraGuestAmount <= 0) return;
+
+  const title = document.createElement("p");
+  title.className = "extra-guest-title";
+  title.textContent = "Please enter the name of your additional guest(s):";
+  extraGuestsBox.appendChild(title);
+
+  for (let i = 1; i <= extraGuestAmount; i++) {
+    const label = document.createElement("label");
+    label.textContent = `Guest ${i + 1} Name`;
+
+    const input = document.createElement("input");
+    input.type = "text";
+    input.className = "extraGuestName";
+    input.placeholder = `Guest ${i + 1} full name`;
+    input.required = true;
+
+    extraGuestsBox.appendChild(label);
+    extraGuestsBox.appendChild(input);
+  }
+}
 
 rsvpForm.addEventListener("submit", function(event) {
   event.preventDefault();
@@ -223,6 +135,7 @@ rsvpForm.addEventListener("submit", function(event) {
   const attending = attendance.value;
   const selectedMeal = attending === "Yes" ? meal.value : "Not applicable";
   const selectedGuestCount = attending === "Yes" ? guestCount.value : "0";
+  const notes = document.getElementById("notes") ? document.getElementById("notes").value : "";
 
   if (!attending) {
     alert("Please select if you will attend.");
@@ -234,6 +147,13 @@ rsvpForm.addEventListener("submit", function(event) {
     return;
   }
 
+  const extraGuestInputs = document.querySelectorAll(".extraGuestName");
+  let extraGuestNames = [];
+
+  extraGuestInputs.forEach((input, index) => {
+    extraGuestNames.push(`Guest ${index + 2}: ${input.value}`);
+  });
+
   const subject = `Wedding RSVP - ${currentGuest.name}`;
 
   const body =
@@ -243,6 +163,12 @@ Name: ${currentGuest.name}
 Attendance: ${attending}
 Meal Preference: ${selectedMeal}
 Confirming For: ${selectedGuestCount}
+
+Additional Guest Names:
+${extraGuestNames.length > 0 ? extraGuestNames.join("\n") : "None"}
+
+Notes:
+${notes || "No notes"}
 
 Guest Link Code: ${guestKey || "No guest code used"}`;
 
