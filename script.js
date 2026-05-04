@@ -1,7 +1,7 @@
 const guests = {
-  "camila-pastrana": {
-    name: "Camila Pastrana",
-    allowedGuests: 2
+  "patricia-arenas-ramirez": {
+    name: "Patricia Arenas Ramirez",
+    allowedGuests: 3
   },
   "maria-lopez": {
     name: "Maria Lopez",
