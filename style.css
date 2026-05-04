@@ -479,3 +479,22 @@ button {
     gap: 6px;
   }
 }
+
+textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 15px 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(157,143,120,0.3);
+  background: rgba(255,255,255,0.85);
+  color: var(--deep);
+  font-family: "Montserrat", sans-serif;
+  resize: vertical;
+}
+
+.extra-guest-title {
+  margin-top: 20px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
