@@ -7,22 +7,26 @@ const guests = {
 
   "maria-lopez": {
     name: "Maria Lopez",
-    allowedGuests: 1
+    allowedGuests: 1,
+    extraGuests: []
   },
 
   "andrea-garcia-plus-one": {
     name: "Andrea Garcia",
-    allowedGuests: 2
+    allowedGuests: 2,
+    extraGuests: []
   },
 
   "family-example-plus-two": {
     name: "Family Example",
-    allowedGuests: 3
+    allowedGuests: 3,
+    extraGuests: []
   },
 
   "family-example-plus-three": {
     name: "Family Example",
-    allowedGuests: 4
+    allowedGuests: 4,
+    extraGuests: []
   }
 };
 
@@ -54,7 +58,6 @@ guestPreview.textContent = `For ${currentGuest.name}`;
 guestName.textContent = currentGuest.name;
 nameInput.value = currentGuest.name;
 
-/* THIS FIXES THE TOP SEAT NUMBER */
 guestLimitText.textContent =
   `We have reserved ${currentGuest.allowedGuests} seat${currentGuest.allowedGuests > 1 ? "s" : ""} in your honor.`;
 
@@ -81,6 +84,7 @@ attendance.addEventListener("change", () => {
   if (attendance.value === "Yes") {
     yesOptions.classList.remove("hidden");
     meal.required = true;
+    buildExtraGuestFields();
   } else {
     yesOptions.classList.add("hidden");
     meal.required = false;
@@ -113,21 +117,44 @@ function buildExtraGuestFields() {
 
   const title = document.createElement("p");
   title.className = "extra-guest-title";
-  title.textContent = "Please enter the name of your additional guest(s):";
+  title.textContent = "Please enter each additional guest name and meal choice:";
   extraGuestsBox.appendChild(title);
 
   for (let i = 1; i <= extraGuestAmount; i++) {
-    const label = document.createElement("label");
-    label.textContent = `Guest ${i + 1} Name`;
+    const suggestedName =
+      currentGuest.extraGuests && currentGuest.extraGuests[i - 1]
+        ? currentGuest.extraGuests[i - 1]
+        : "";
+
+    const labelName = document.createElement("label");
+    labelName.textContent = `Guest ${i + 1} Name`;
 
     const input = document.createElement("input");
     input.type = "text";
     input.className = "extraGuestName";
+    input.name = `extraGuest${i + 1}Name`;
     input.placeholder = `Guest ${i + 1} full name`;
+    input.value = suggestedName;
     input.required = true;
 
-    extraGuestsBox.appendChild(label);
+    const labelMeal = document.createElement("label");
+    labelMeal.textContent = `Guest ${i + 1} Meal`;
+
+    const select = document.createElement("select");
+    select.className = "extraGuestMeal";
+    select.name = `extraGuest${i + 1}Meal`;
+    select.required = true;
+
+    select.innerHTML = `
+      <option value="">Select meal</option>
+      <option value="Carnivore">Carnivore</option>
+      <option value="Vegetarian">Vegetarian</option>
+    `;
+
+    extraGuestsBox.appendChild(labelName);
     extraGuestsBox.appendChild(input);
+    extraGuestsBox.appendChild(labelMeal);
+    extraGuestsBox.appendChild(select);
   }
 }
 
@@ -149,38 +176,67 @@ rsvpForm.addEventListener("submit", function(event) {
     return;
   }
 
-  const extraGuestInputs = document.querySelectorAll(".extraGuestName");
-  let extraGuestNames = [];
+  const extraGuestNames = document.querySelectorAll(".extraGuestName");
+  const extraGuestMeals = document.querySelectorAll(".extraGuestMeal");
 
-  extraGuestInputs.forEach((input, index) => {
-    extraGuestNames.push(`Guest ${index + 2}: ${input.value}`);
+  let extraGuestsInfo = [];
+
+  extraGuestNames.forEach((input, index) => {
+    const mealChoice = extraGuestMeals[index] ? extraGuestMeals[index].value : "";
+
+    if (!input.value.trim()) {
+      alert(`Please enter Guest ${index + 2} name.`);
+      return;
+    }
+
+    if (!mealChoice) {
+      alert(`Please select Guest ${index + 2} meal.`);
+      return;
+    }
+
+    extraGuestsInfo.push(
+      `Guest ${index + 2}: ${input.value.trim()} - Meal: ${mealChoice}`
+    );
   });
 
-  const subject = `Wedding RSVP - ${currentGuest.name}`;
+  document.getElementById("guestCodeInput").value = guestKey || "No guest code";
+  document.getElementById("mainGuestInput").value = currentGuest.name;
+  document.getElementById("extraGuestsInput").value =
+    extraGuestsInfo.length > 0 ? extraGuestsInfo.join(", ") : "None";
 
-  const body =
-`Wedding RSVP
+  const formData = new FormData(rsvpForm);
 
-Name: ${currentGuest.name}
-Attendance: ${attending}
-Meal Preference: ${selectedMeal}
-Confirming For: ${selectedGuestCount}
+  formData.append("guestCode", guestKey || "No guest code");
+  formData.append("mainGuest", currentGuest.name);
+  formData.append("attendance", attending);
+  formData.append("mainGuestMeal", selectedMeal);
+  formData.append("guestCount", selectedGuestCount);
+  formData.append("extraGuests", extraGuestsInfo.length > 0 ? extraGuestsInfo.join(", ") : "None");
+  formData.append("notes", notes);
+  formData.append("submittedAt", new Date().toLocaleString());
 
-Additional Guest Names:
-${extraGuestNames.length > 0 ? extraGuestNames.join("\n") : "None"}
-
-Notes:
-${notes || "No notes"}
-
-Guest Link Code: ${guestKey || "No guest code used"}`;
-
-  const email = "tamy.badar@hotmail.com";
-
-  window.location.href =
-    `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  fetch(rsvpForm.action, {
+    method: "POST",
+    body: formData,
+    headers: {
+      "Accept": "application/json"
+    }
+  })
+    .then(response => {
+      if (response.ok) {
+        alert("Thank you! Your RSVP has been saved.");
+        rsvpForm.reset();
+        nameInput.value = currentGuest.name;
+        clearExtraGuestFields();
+        yesOptions.classList.add("hidden");
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    })
+    .catch(error => {
+      alert("Something went wrong. Please try again.");
+    });
 });
-
-/* SCROLL REVEAL EFFECT */
 
 const revealElements = document.querySelectorAll(".reveal");
 
