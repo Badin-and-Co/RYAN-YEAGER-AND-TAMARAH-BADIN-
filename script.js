@@ -1,7 +1,8 @@
 const guests = {
   "patricia-arenas-ramirez": {
     name: "Patricia Arenas Ramirez",
-    allowedGuests: 3
+    allowedGuests: 3,
+    extraGuests: ["Omar Badin", "Blanca Ramirez"]
   },
 
   "maria-lopez": {
@@ -31,6 +32,7 @@ const guestKey = params.get("guest");
 let currentGuest = guests[guestKey] || {
   name: "Beautiful Guest",
   allowedGuests: 1
+  extraGuests: []
 };
 
 const envelopeScreen = document.getElementById("envelopeScreen");
