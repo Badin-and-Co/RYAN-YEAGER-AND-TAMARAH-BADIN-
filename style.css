@@ -532,3 +532,54 @@ textarea {
 .palette-row span:hover {
   transform: scale(1.08);
 }
+
+/* PHOTO BAND - MOVING CAROUSEL */
+
+.photo-band {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 30px;
+  padding: 10px 0;
+}
+
+.photo-track {
+  display: flex;
+  gap: 18px;
+  width: max-content;
+  animation: photoScroll 35s linear infinite;
+}
+
+.photo-track img {
+  width: 150px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 22px;
+  flex-shrink: 0;
+  box-shadow: 0 14px 35px rgba(75, 68, 56, 0.16);
+}
+
+@keyframes photoScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.photo-band:hover .photo-track {
+  animation-play-state: paused;
+}
+
+@media (max-width: 600px) {
+  .photo-track {
+    gap: 12px;
+    animation-duration: 28s;
+  }
+
+  .photo-track img {
+    width: 115px;
+    height: 165px;
+    border-radius: 18px;
+  }
+}
