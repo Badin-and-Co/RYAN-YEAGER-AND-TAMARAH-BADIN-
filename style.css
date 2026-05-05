@@ -583,3 +583,12 @@ textarea {
     border-radius: 18px;
   }
 }
+/* DRESS CODE IMAGE SIZE */
+
+.dresscode-img {
+  width: 100%;
+  max-width: 420px;   /* controls how small it is */
+  height: auto;
+  display: block;
+  margin: 40px auto 0;
+}
