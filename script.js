@@ -1,33 +1,141 @@
 const guests = {
-  "patricia-arenas-ramirez": {
-    name: "Patricia Arenas Ramirez",
-    allowedGuests: 3,
-    extraGuests: []
+  "kay-kelly": {
+    name: "Kay Kelly",
+    allowedGuests: 2,
+    extraGuests: ["Jeff Kelly"]
   },
 
-  "maria-lopez": {
-    name: "Maria Lopez",
+  "nicole-yeager": {
+    name: "Nicole Yeager",
     allowedGuests: 1,
     extraGuests: []
   },
 
-  "andrea-garcia-plus-one": {
-    name: "Andrea Garcia",
+  "stephen-yeager": {
+    name: "Stephen Yeager",
+    allowedGuests: 1,
+    extraGuests: []
+  },
+
+  "david-yeager": {
+    name: "David Yeager",
+    allowedGuests: 1,
+    extraGuests: []
+  },
+
+  "austin-&-ashley-kelly": {
+    name: "Austin & Ashley Kelly",
     allowedGuests: 2,
+  },
+   "josh-&-abby-kelly": {
+    name: "Josh & Abby Kelly",
+    allowedGuests: 2,
+  },
+   "will-&-steph-kelly": {
+    name: "Will & Stephanie Kelly",
+    allowedGuests: 2,
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1,
     extraGuests: []
   },
-
-  "family-example-plus-two": {
-    name: "Family Example",
-    allowedGuests: 3,
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1,
     extraGuests: []
   },
-
-  "family-example-plus-three": {
-    name: "Family Example",
-    allowedGuests: 4,
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1,
     extraGuests: []
-  }
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1,
+    extraGuests: []
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1,
+    extraGuests: []
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1,
+    extraGuests: []
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1,
+    extraGuests: []
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1,
+    extraGuests: []
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1,
+    extraGuests: []
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1,
+    extraGuests: []
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1,
+    extraGuests: []
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1,
+    extraGuests: []
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1,
+    extraGuests: []
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1,
+    extraGuests: []
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1,
+    extraGuests: []
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1,
+    extraGuests: []
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1,
+    extraGuests: []
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1,
+    extraGuests: []
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1,
+    extraGuests: []
+  },
+   "maria-lopez": {
+    name: "Maria Lopez",
+    allowedGuests: 1,
+    extraGuests: []
+  },
+  
 };
 
 const params = new URLSearchParams(window.location.search);
