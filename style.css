@@ -93,11 +93,11 @@ body {
   font-size: 2.2rem;
   color: var(--deep);
 }
-
+/*
 .envelope-wrapper:hover .envelope-letter {
   transform: translateY(-40px);
 }
-
+*/
 .envelope-left {
   position: absolute;
   bottom: 0;
