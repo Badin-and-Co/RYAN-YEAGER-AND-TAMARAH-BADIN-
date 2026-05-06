@@ -51,6 +51,7 @@ body {
   0%, 100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-12px);
   }
@@ -93,11 +94,7 @@ body {
   font-size: 2.2rem;
   color: var(--deep);
 }
-/*
-.envelope-wrapper:hover .envelope-letter {
-  transform: translateY(-40px);
-}
-*/
+
 .envelope-left {
   position: absolute;
   bottom: 0;
@@ -163,7 +160,40 @@ body {
   background:
     radial-gradient(circle at 50% 0%, rgba(255,255,255,0.95), transparent 28%),
     linear-gradient(180deg, #fdf9f3, #eee2d1);
-  padding: 35px 18px;
+  padding: 20px 12px;
+}
+
+/* TINY TOP MENU */
+
+.mini-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto 10px;
+  padding: 10px 12px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  background: rgba(255, 250, 243, 0.82);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(157,143,120,0.18);
+  border-radius: 999px;
+}
+
+.mini-nav a {
+  font-size: 0.63rem;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--taupe);
+  font-family: "Montserrat", sans-serif;
+}
+
+.mini-nav a:hover {
+  color: var(--deep);
 }
 
 /* MAIN CARD */
@@ -189,8 +219,8 @@ body {
 }
 
 .intro {
-  min-height: 92vh;
-  padding: 90px 30px 70px;
+  min-height: auto;
+  padding: 95px 30px 28px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -203,11 +233,11 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--muted);
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .intro h1 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "Playfair Display", serif;
   font-weight: 300;
   font-style: italic;
   font-size: clamp(2.2rem, 5vw, 3.2rem);
@@ -220,13 +250,13 @@ body {
   font-family: "Playfair Display", serif;
   font-size: 1.4rem;
   color: var(--taupe);
-  margin: 12px 0;
+  margin: 10px 0;
 }
 
 .guest-name-box {
   width: min(460px, 100%);
-  margin: 45px auto 30px;
-  padding: 25px;
+  margin: 28px auto 8px;
+  padding: 22px;
   border-radius: 28px;
   background: rgba(250,246,239,0.9);
   border: 1px solid rgba(157,143,120,0.2);
@@ -260,10 +290,10 @@ body {
 /* SECTIONS */
 
 .divider-section {
-  padding: /*25px 35px*/ 10px 10px;
+  padding: 10px;
   display: flex;
   align-items: center;
-  gap: /*18px*/ 5px;
+  gap: 5px;
   text-align: center;
 }
 
@@ -280,9 +310,10 @@ body {
 }
 
 .invitation-section {
-  padding: 80px 35px;
+  padding: 42px 35px;
   text-align: center;
   position: relative;
+  scroll-margin-top: 90px;
 }
 
 .section-label {
@@ -290,30 +321,30 @@ body {
   letter-spacing: 4px;
   font-size: 0.7rem;
   color: var(--taupe);
-  margin-bottom: 10px /*16px*/;
+  margin-bottom: 10px;
 }
 
 .invitation-section h2 {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: clamp(2.1rem, 6vw, 3.6rem);
-  margin-bottom: /*20px*/ 10px;
+  margin-bottom: 10px;
 }
 
 .soft-copy {
   max-width: 520px;
   margin: 0 auto;
   color: var(--muted);
-  line-height: 1.8;
+  line-height: 1.7;
 }
 
-/* PALETTE */
+/* COLOR PALETTE */
 
-.palette{
+.palette {
   display: flex;
   justify-content: center;
   gap: 13px;
-  margin-top: 30px;
+  margin-top: 22px;
   flex-wrap: wrap;
 }
 
@@ -325,18 +356,47 @@ body {
   box-shadow: 0 15px 35px rgba(75,68,56,0.08);
 }
 
+.palette-lines {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.palette-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+}
+
+.palette-row span {
+  display: block;
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
+  border: 1px solid rgba(75,68,56,0.15);
+  box-shadow: 0 12px 28px rgba(75,68,56,0.12);
+  transition: 0.3s ease;
+}
+
+.palette-row span:hover {
+  transform: scale(1.08);
+}
+
 /* SCHEDULE */
 
 .schedule {
   max-width: 480px;
-  margin: 30px auto 0;
+  margin: 18px auto 0;
 }
 
 .schedule div {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  padding: 18px 0;
+  padding: 16px 0;
   border-bottom: 1px solid rgba(157,143,120,0.25);
 }
 
@@ -355,7 +415,7 @@ body {
 .invitation-button,
 button {
   display: inline-block;
-  margin-top: 28px;
+  margin-top: 24px;
   padding: 14px 34px;
   border-radius: 999px;
   border: 1px solid rgba(157,143,120,0.5);
@@ -380,13 +440,13 @@ button:hover {
 
 form {
   max-width: 520px;
-  margin: 35px auto 0;
+  margin: 24px auto 0;
   text-align: left;
 }
 
 label {
   display: block;
-  margin: 18px 0 8px;
+  margin: 16px 0 8px;
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -404,8 +464,27 @@ select {
   font-family: "Montserrat", sans-serif;
 }
 
+textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 15px 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(157,143,120,0.3);
+  background: rgba(255,255,255,0.85);
+  color: var(--deep);
+  font-family: "Montserrat", sans-serif;
+  resize: vertical;
+}
+
 button {
   width: 100%;
+}
+
+.extra-guest-title {
+  margin-top: 20px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 
 /* SCROLL MAGIC */
@@ -421,19 +500,18 @@ button {
   transform: translateY(0);
 }
 
-
 /* REGISTRY CUBES */
 
 .registry-cubes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
-  margin-top: 35px;
+  margin-top: 28px;
 }
 
 .registry-cube {
-  min-height: 170px;
-  padding: 28px 18px;
+  min-height: 160px;
+  padding: 26px 18px;
   border-radius: 26px;
   background: rgba(255,255,255,0.65);
   border: 1px solid rgba(157,143,120,0.22);
@@ -457,6 +535,79 @@ button {
   line-height: 1.6;
 }
 
+/* PHOTO BAND - MOVING CAROUSEL */
+
+.photo-band {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 18px;
+  padding: 0;
+}
+
+.photo-track {
+  display: flex;
+  gap: 0;
+  width: max-content;
+  animation: photoScroll 35s linear infinite;
+}
+
+.photo-track img {
+  width: 150px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 0;
+  flex-shrink: 0;
+  box-shadow: 0 14px 35px rgba(75, 68, 56, 0.16);
+}
+
+@keyframes photoScroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.photo-band:hover .photo-track {
+  animation-play-state: paused;
+}
+
+/* DRESS CODE IMAGE SIZE */
+
+.dresscode-img {
+  width: 50%;
+  max-width: 350px;
+  height: auto;
+  display: block;
+}
+
+/* FABRIC EFFECT */
+
+.sage-fabric {
+  background:
+    linear-gradient(
+      90deg,
+      #e2e0d2 0%,
+      #c3c0ab 25%,
+      #aaa88f 50%,
+      #c3c0ab 75%,
+      #e2e0d2 100%
+    );
+  position: relative;
+  overflow: hidden;
+}
+
+.sage-fabric::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(255,255,255,0.2), transparent 40%),
+    radial-gradient(circle at 70% 80%, rgba(0,0,0,0.1), transparent 50%);
+  mix-blend-mode: soft-light;
+}
 
 /* MOBILE */
 
@@ -496,16 +647,38 @@ button {
     left: 35px;
   }
 
+  .invitation-background {
+    padding: 12px 8px;
+  }
+
+  .mini-nav {
+    gap: 10px;
+    padding: 9px 10px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+  }
+
+  .mini-nav a {
+    font-size: 0.58rem;
+    letter-spacing: 1.1px;
+  }
+
   .invitation-card {
     border-radius: 30px;
   }
 
   .intro {
-    padding: 75px 22px 55px;
+    padding: 70px 22px 22px;
+  }
+
+  .guest-name-box {
+    margin: 24px auto 4px;
+    padding: 20px;
   }
 
   .invitation-section {
-    padding: 65px 24px;
+    padding: 36px 22px;
+    scroll-margin-top: 92px;
   }
 
   .divider-section {
@@ -517,111 +690,20 @@ button {
     text-align: center;
     gap: 6px;
   }
-    .registry-cubes {
+
+  .registry-cubes {
     grid-template-columns: 1fr;
     gap: 18px;
+    margin-top: 24px;
   }
 
   .registry-cube {
     width: 100%;
-    min-height: 160px;
+    min-height: 150px;
   }
-}
 
-textarea {
-  width: 100%;
-  min-height: 120px;
-  padding: 15px 16px;
-  border-radius: 18px;
-  border: 1px solid rgba(157,143,120,0.3);
-  background: rgba(255,255,255,0.85);
-  color: var(--deep);
-  font-family: "Montserrat", sans-serif;
-  resize: vertical;
-}
-
-.extra-guest-title {
-  margin-top: 20px;
-  color: var(--muted);
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
-
-/* COLOR PALETTE CUBES */
-
-.palette-lines {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  align-items: center;
-}
-
-.palette-row {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: nowrap;
-}
-
-.palette-row span {
-  display: block;
-  width: 52px;
-  height: 52px;
-  border-radius: 8px;
-  border: 1px solid rgba(75,68,56,0.15);
-  box-shadow: 0 12px 28px rgba(75,68,56,0.12);
-}
-
-.palette-row span {
-  transition: 0.3s ease;
-}
-
-.palette-row span:hover {
-  transform: scale(1.08);
-}
-
-/* PHOTO BAND - MOVING CAROUSEL */
-
-.photo-band {
-  width: 100%;
-  overflow: hidden;
-  margin-top: 30px;
-  padding: 0px 0;
-}
-
-.photo-track {
-  display: flex;
-  gap: 0px;
-  width: max-content;
-  animation: photoScroll 35s linear infinite;
-}
-
-.photo-track img {
-  width: 150px;
-  height: 210px;
-  object-fit: cover;
-  border-radius: 0px;
-  flex-shrink: 0;
-  box-shadow: 0 14px 35px rgba(75, 68, 56, 0.16);
-}
-
-@keyframes photoScroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-.photo-band:hover .photo-track {
-  animation-play-state: paused;
-}
-
-@media (max-width: 600px) {
   .photo-track {
-    gap: 0px;
+    gap: 0;
     animation-duration: 45s;
   }
 
@@ -630,38 +712,13 @@ textarea {
     height: 350px;
     border-radius: 9px;
   }
-}
-/* DRESS CODE IMAGE SIZE */
 
-.dresscode-img {
-  width: 50%;
-  max-width: 350px;   /* controls how small it is */
-  height: auto;
-  display: block;
-  /* margin: 40px auto 0; */
-}
+  .palette-row {
+    gap: 8px;
+  }
 
-.sage-fabric {
-  background:
-    linear-gradient(
-      90deg,
-      #e2e0d2 0%,
-      #c3c0ab 25%,
-      #aaa88f 50%,
-      #c3c0ab 75%,
-      #e2e0d2 100%
-    );
-  
-  position: relative;
-  overflow: hidden;
-}
-
-.sage-fabric::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: 
-    radial-gradient(circle at 30% 20%, rgba(255,255,255,0.2), transparent 40%),
-    radial-gradient(circle at 70% 80%, rgba(0,0,0,0.1), transparent 50%);
-  mix-blend-mode: soft-light;
+  .palette-row span {
+    width: 44px;
+    height: 44px;
+  }
 }
