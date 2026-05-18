@@ -29,16 +29,22 @@ const guests = {
     invitedGuests: ["Austin Kelly", "Ashley Kelly"]
   },
 
+  "andrew-kelly": {
+    displayName: "Andrew Kelly",
+    allowedGuests: 1,
+    invitedGuests: ["Andrew Kelly"]
+  },
+
   "josh-abby-kelly": {
-    displayName: "Josh & Abby Kelly",
+    displayName: "Josh Kelly & Abby Scheller",
     allowedGuests: 2,
-    invitedGuests: ["Josh Kelly", "Abby Kelly"]
+    invitedGuests: ["Joshua Kelly", "Abby Scheller"]
   },
 
   "will-and-steph-kelly": {
-    displayName: "William & Stephanie Kelly",
+    displayName: "Will & Stefanie Kelly",
     allowedGuests: 2,
-    invitedGuests: ["William Kelly", "Stephanie Kelly"]
+    invitedGuests: ["Will Kelly", "Stefani Kelly"]
   },
 
   "patricia-and-omar-badin": {
@@ -56,7 +62,76 @@ const guests = {
     allowedGuests: 1,
     invitedGuests: ["Omar Badin Arenas"]
   },
-  
+    "rosy-badin": {
+    displayName: "Omar Badin Arenas",
+    allowedGuests: 1,
+    invitedGuests: ["Omar Badin Arenas"]
+  },
+    "omar-badin": {
+    displayName: "Omar Badin Arenas",
+    allowedGuests: 1,
+    invitedGuests: ["Omar Badin Arenas"]
+  },
+    "omar-badin": {
+    displayName: "Omar Badin Arenas",
+    allowedGuests: 1,
+    invitedGuests: ["Omar Badin Arenas"]
+  },
+    "omar-badin": {
+    displayName: "Omar Badin Arenas",
+    allowedGuests: 1,
+    invitedGuests: ["Omar Badin Arenas"]
+  },
+    "omar-badin": {
+    displayName: "Omar Badin Arenas",
+    allowedGuests: 1,
+    invitedGuests: ["Omar Badin Arenas"]
+  },
+    "omar-badin": {
+    displayName: "Omar Badin Arenas",
+    allowedGuests: 1,
+    invitedGuests: ["Omar Badin Arenas"]
+  },
+    "omar-badin": {
+    displayName: "Omar Badin Arenas",
+    allowedGuests: 1,
+    invitedGuests: ["Omar Badin Arenas"]
+  },
+    "omar-badin": {
+    displayName: "Omar Badin Arenas",
+    allowedGuests: 1,
+    invitedGuests: ["Omar Badin Arenas"]
+  },
+    "omar-badin": {
+    displayName: "Omar Badin Arenas",
+    allowedGuests: 1,
+    invitedGuests: ["Omar Badin Arenas"]
+  },
+    "omar-badin": {
+    displayName: "Omar Badin Arenas",
+    allowedGuests: 1,
+    invitedGuests: ["Omar Badin Arenas"]
+  },
+    "omar-badin": {
+    displayName: "Omar Badin Arenas",
+    allowedGuests: 1,
+    invitedGuests: ["Omar Badin Arenas"]
+  },
+    "omar-badin": {
+    displayName: "Omar Badin Arenas",
+    allowedGuests: 1,
+    invitedGuests: ["Omar Badin Arenas"]
+  },
+    "omar-badin": {
+    displayName: "Omar Badin Arenas",
+    allowedGuests: 1,
+    invitedGuests: ["Omar Badin Arenas"]
+  },
+    "omar-badin": {
+    displayName: "Omar Badin Arenas",
+    allowedGuests: 1,
+    invitedGuests: ["Omar Badin Arenas"]
+  },  
 };
 
 const params = new URLSearchParams(window.location.search);
