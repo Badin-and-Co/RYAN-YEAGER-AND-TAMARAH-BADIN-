@@ -872,3 +872,46 @@ button {
       scale(1.02);
   }
 }
+
+
+/* =========================
+   COUNTDOWN SECTION
+========================= */
+
+.countdown-section{
+  background: transparent !important;
+}
+
+.countdown-wrapper{
+  display:flex;
+  justify-content:center;
+  gap:16px;
+  flex-wrap:wrap;
+  margin-top:35px;
+}
+
+.countdown-box{
+  width:92px;
+  height:92px;
+  border-radius:24px;
+  background: rgba(250,246,239,0.75);
+  border:1px solid rgba(157,143,120,0.18);
+  box-shadow:0 12px 30px rgba(75,68,56,0.07);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.countdown-box span{
+  font-size:1.9rem;
+  font-family:"Playfair Display", serif;
+  color:var(--deep);
+}
+
+.countdown-box p{
+  font-size:.68rem;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:var(--taupe);
+}
