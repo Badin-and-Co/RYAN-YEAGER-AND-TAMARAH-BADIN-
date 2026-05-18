@@ -422,15 +422,15 @@ const guests = {
     allowedGuests: 2,
     invitedGuests: ["Abi Adigun", "Vivian Adigun"]
   },
-    "claudia-": {
-    displayName: "Emmanuel & Claudia ",
+    "claudia-rivero": {
+    displayName: "Claudia Rivero & Emmanuel Rodriguez,
     allowedGuests: 2,
-    invitedGuests: ["Claudia ", "Emmanuel"]
+    invitedGuests: ["Claudia Rivero", "Emmanuel Rodriguez"]
   },
-    "pam-alvarez": {
-    displayName: "Pam",
+    "pamela-alvarez": {
+    displayName: "Jose Antonio & Pamela Alvarez",
     allowedGuests: 2,
-    invitedGuests: ["Pam",""]
+    invitedGuests: ["Jose Antonio Alvarez","Pamela Alvarez"]
   },
     "mariana-paige": {
     displayName: "Jonathan & Mariana Paige",
