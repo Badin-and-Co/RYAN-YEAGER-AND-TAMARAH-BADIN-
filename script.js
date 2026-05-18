@@ -388,9 +388,9 @@ const guests = {
     invitedGuests: ["Sam Julio Escalante"]
   },
     "santiago-aguero": {
-    displayName: "Santiago Aguero & Regina chavela",
+    displayName: "Santiago Agüero & Regina Chavela",
     allowedGuests: 2,
-    invitedGuests: ["Santiago Aguero","Regina Chavela"]
+    invitedGuests: ["Santiago Agüero","Regina Chavela"]
   },
     "caro-delarosa": {
     displayName: "Caro De La Rosa",
@@ -402,7 +402,7 @@ const guests = {
     allowedGuests: 2,
     invitedGuests: ["Ilze Castillo", "Plus one"]
   },
-    "iliana-valle": {
+    "illiana-valle": {
     displayName: "Illiana Valle",
     allowedGuests: 1,
     invitedGuests: ["Illiana Valle"]
@@ -467,6 +467,16 @@ const guests = {
     allowedGuests: 2,
     invitedGuests: ["Quojan Coutee", "Emma Coutee"]
   },  
+    "sofi-rodriguez": {
+    displayName: "Ana Sofia Rodriguez",
+    allowedGuests: 1,
+    invitedGuests: ["Ana Sofia Rodriguez"]
+  }, 
+    "bani-muñoz": {
+    displayName: "Bani & Viris Muñoz",
+    allowedGuests: 2,
+    invitedGuests: ["Bani Muñoz", "Viris Muñoz"]
+  }, 
   
 };
 
