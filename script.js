@@ -1,5 +1,5 @@
 const guests = {
-  "kay-jeff-kelly": {
+  "kay-kelly": {
     displayName: "Kay & Jeff Kelly",
     allowedGuests: 2,
     invitedGuests: ["Kay Kelly", "Jeff Kelly"]
@@ -23,7 +23,7 @@ const guests = {
     invitedGuests: ["David Yeager"]
   },
 
-  "austin-ashley-kelly": {
+  "austin-kelly": {
     displayName: "Austin & Ashley Kelly",
     allowedGuests: 2,
     invitedGuests: ["Austin Kelly", "Ashley Kelly"]
@@ -35,24 +35,24 @@ const guests = {
     invitedGuests: ["Andrew Kelly"]
   },
 
-  "josh-abby-kelly": {
+  "josh-kelly": {
     displayName: "Josh Kelly & Abby Scheller",
     allowedGuests: 2,
     invitedGuests: ["Joshua Kelly", "Abby Scheller"]
   },
 
-  "will-and-steph-kelly": {
+  "will-kelly": {
     displayName: "Will & Stefanie Kelly",
     allowedGuests: 2,
     invitedGuests: ["Will Kelly", "Stefani Kelly"]
   },
 
-  "patricia-and-omar-badin": {
+  "patricia-badin": {
     displayName: "Patricia & Omar Badin",
     allowedGuests: 2,
     invitedGuests: ["Patricia Badin", "Omar Badin"]
   },
-  "samantha-and-andrei-szabo": {
+  "samantha-szabo": {
     displayName: "Samantha & Andrei Szabo",
     allowedGuests: 2,
     invitedGuests: ["Samantha Szabo", "Andrei Szabo"]
@@ -107,10 +107,10 @@ const guests = {
     allowedGuests: 1,
     invitedGuests: ["Jesus Badin"]
   },
-    "reanata-badin": {
+    "renata-badin": {
     displayName: "Renata Badin",
     allowedGuests: 1,
-    invitedGuests: ["Reanata Badin"]
+    invitedGuests: ["Renata Badin"]
   },
     "regina-badin": {
     displayName: "Regina Badin & Anuar Abugaber",
@@ -132,105 +132,105 @@ const guests = {
     allowedGuests: 3,
     invitedGuests: ["Gerardo Arenas","Greta Albarran", "Paulina Arenas"]
   },  
-    "reanata-badin": {
-    displayName: "Renata Badin",
+    "gerardo-badin": {
+    displayName: "Gerardo & Monica Badin",
     allowedGuests: 1,
-    invitedGuests: ["Reanata Badin"]
+    invitedGuests: ["Gerardo Badin", "Monica Badin"]
   },
-      "reanata-badin": {
-    displayName: "Renata Badin",
-    allowedGuests: 1,
-    invitedGuests: ["Reanata Badin"]
+    "anuar-badin": {
+    displayName: "Anuar Badin & Alejandra Lepe",
+    allowedGuests: 2,
+    invitedGuests: ["Anuar Badin", "Alejandra Lepe"]
   },
-      "reanata-badin": {
-    displayName: "Renata Badin",
+    "marcela-arechandieta": {
+    displayName: "Marcela Arechandieta",
     allowedGuests: 1,
-    invitedGuests: ["Reanata Badin"]
+    invitedGuests: ["Marcela Arechandieta"]
   },
-      "reanata-badin": {
-    displayName: "Renata Badin",
+    "nicolas-badin": {
+    displayName: "Nicolas Badin",
     allowedGuests: 1,
-    invitedGuests: ["Reanata Badin"]
+    invitedGuests: ["Nicolas Badin"]
   },
-      "reanata-badin": {
-    displayName: "Renata Badin",
-    allowedGuests: 1,
-    invitedGuests: ["Reanata Badin"]
+    "nasta-said": {
+    displayName: "Nasta & Pablo Said",
+    allowedGuests: 2,
+    invitedGuests: ["Nasta Said", "Pablo Said"]
   },
-      "reanata-badin": {
-    displayName: "Renata Badin",
-    allowedGuests: 1,
-    invitedGuests: ["Reanata Badin"]
+    "olga-badin": {
+    displayName: "Olga & Anuar Badin",
+    allowedGuests: 2,
+    invitedGuests: ["Olga Badin", "Anuar Badin"]
   },
-      "reanata-badin": {
-    displayName: "Renata Badin",
-    allowedGuests: 1,
-    invitedGuests: ["Reanata Badin"]
+    "jessica-badin": {
+    displayName: "Jessica Said & Gerardo Carvajal",
+    allowedGuests: 2,
+    invitedGuests: ["Jessica Said", "Gerardo Carvajal"]
   },
-      "reanata-badin": {
-    displayName: "Renata Badin",
-    allowedGuests: 1,
-    invitedGuests: ["Reanata Badin"]
+    "michael-melugin": {
+    displayName: "Michael & Deb Melugin",
+    allowedGuests: 2,
+    invitedGuests: ["Michael Melugin", "Deb Melugin"]
   },
-      "reanata-badin": {
-    displayName: "Renata Badin",
-    allowedGuests: 1,
-    invitedGuests: ["Reanata Badin"]
+    "rick-crider": {
+    displayName: "Rick & Joyce Crider",
+    allowedGuests: 2,
+    invitedGuests: ["Rick Crider", "Joyce Crider"]
   },
-      "reanata-badin": {
-    displayName: "Renata Badin",
-    allowedGuests: 1,
-    invitedGuests: ["Reanata Badin"]
+    "andrea-hombeak": {
+    displayName: "Andrea & Darren Hornbeak",
+    allowedGuests: 2,
+    invitedGuests: ["Andrea Hornbeak", "Darren Hornbeak"]
   },
-      "reanata-badin": {
-    displayName: "Renata Badin",
-    allowedGuests: 1,
-    invitedGuests: ["Reanata Badin"]
+    "kim-henderson": {
+    displayName: "Kim & Randy Henderson",
+    allowedGuests: 2,
+    invitedGuests: ["Kim Henderson", "Randy Henderson"]
   },
-      "reanata-badin": {
-    displayName: "Renata Badin",
-    allowedGuests: 1,
-    invitedGuests: ["Reanata Badin"]
+    "janis-burkle": {
+    displayName: "Janis & Peter Burkle",
+    allowedGuests: 2,
+    invitedGuests: ["Janis Burkle","Peter Burkle"]
   },
-      "reanata-badin": {
-    displayName: "Renata Badin",
-    allowedGuests: 1,
-    invitedGuests: ["Reanata Badin"]
+    "greg-eversole": {
+    displayName: "Greg & Susan Eversole",
+    allowedGuests: 2,
+    invitedGuests: ["Greg Eversole", "Susan Eversole"]
   },
-      "reanata-badin": {
-    displayName: "Renata Badin",
+    "blake-buttles": {
+    displayName: "Blake Buttles",
     allowedGuests: 1,
-    invitedGuests: ["Reanata Badin"]
+    invitedGuests: ["Blake Buttles"]
   },
-      "reanata-badin": {
-    displayName: "Renata Badin",
+    "zack-herring": {
+    displayName: "Zack Herring",
     allowedGuests: 1,
-    invitedGuests: ["Reanata Badin"]
+    invitedGuests: ["Zack Herring"]
   },
-      "reanata-badin": {
-    displayName: "Renata Badin",
+    "neal-kotecha": {
+    displayName: "Neal Kotecha",
     allowedGuests: 1,
-    invitedGuests: ["Reanata Badin"]
+    invitedGuests: ["Neal Kotecha"]
   },
-      "reanata-badin": {
-    displayName: "Renata Badin",
+    "dara-kotyczca": {
+    displayName: "Dara Kotyczca",
     allowedGuests: 1,
-    invitedGuests: ["Reanata Badin"]
+    invitedGuests: ["Dara Kotyczca"]
   },
-      "reanata-badin": {
-    displayName: "Renata Badin",
-    allowedGuests: 1,
-    invitedGuests: ["Reanata Badin"]
+    "pam-salley": {
+    displayName: "Pam & Joe Salley",
+    allowedGuests: 2,
+    invitedGuests: ["Pam Salley", "Joe Salley"]
   },
-      "reanata-badin": {
-    displayName: "Renata Badin",
-    allowedGuests: 1,
-    invitedGuests: ["Reanata Badin"]
+    "joe-visy": {
+    displayName: "Joe & Jean Visy",
+    allowedGuests: 2,
+    invitedGuests: ["Joe Visy","Jean Visy"]
   },
-      "reanata-badin": {
-    displayName: "Renata Badin",
+    "ayan-kundi": {
+    displayName: "Ayan Kundi",
     allowedGuests: 1,
-    invitedGuests: ["Reanata Badin"]
+    invitedGuests: ["Ayan Kundi"]
   },
   
 };
