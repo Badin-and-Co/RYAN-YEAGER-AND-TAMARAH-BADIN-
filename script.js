@@ -63,75 +63,176 @@ const guests = {
     invitedGuests: ["Omar Badin Arenas"]
   },
     "rosy-badin": {
-    displayName: "Omar Badin Arenas",
+    displayName: "Rosy Badin",
     allowedGuests: 1,
-    invitedGuests: ["Omar Badin Arenas"]
+    invitedGuests: ["Rosy Badin"]
   },
-    "omar-badin": {
-    displayName: "Omar Badin Arenas",
+    "rosy-cherit": {
+    displayName: "Rosy Cherit",
     allowedGuests: 1,
-    invitedGuests: ["Omar Badin Arenas"]
+    invitedGuests: ["Rosy Cherit"]
   },
-    "omar-badin": {
-    displayName: "Omar Badin Arenas",
-    allowedGuests: 1,
-    invitedGuests: ["Omar Badin Arenas"]
+    "andrea-fautsch": {
+    displayName: "Andrea Fautsch & Fer Jaime",
+    allowedGuests: 2,
+    invitedGuests: ["Andrea Fautsch", "Fer Jaime"]
   },
-    "omar-badin": {
-    displayName: "Omar Badin Arenas",
+    "iker-badin": {
+    displayName: "Iker Badin",
     allowedGuests: 1,
-    invitedGuests: ["Omar Badin Arenas"]
+    invitedGuests: ["Iker Badin"]
   },
-    "omar-badin": {
-    displayName: "Omar Badin Arenas",
+    "coco-badin": {
+    displayName: "Coco Badin",
     allowedGuests: 1,
-    invitedGuests: ["Omar Badin Arenas"]
+    invitedGuests: ["Coco Badin"]
   },
-    "omar-badin": {
-    displayName: "Omar Badin Arenas",
-    allowedGuests: 1,
-    invitedGuests: ["Omar Badin Arenas"]
+    "jorge-sucar": {
+    displayName: "Jorge Sucar & Yesi Briceño",
+    allowedGuests: 2,
+    invitedGuests: ["Jorge Sucar", "Yesi Briceño"]
   },
-    "omar-badin": {
-    displayName: "Omar Badin Arenas",
-    allowedGuests: 1,
-    invitedGuests: ["Omar Badin Arenas"]
+    "emil-sucar": {
+    displayName: "Emil Sucar & Fer Llera",
+    allowedGuests: 2,
+    invitedGuests: ["Emil Sucar", "Fer Llera"]
   },
-    "omar-badin": {
-    displayName: "Omar Badin Arenas",
+    "dani-sucar": {
+    displayName: "Daniella Sucar",
     allowedGuests: 1,
-    invitedGuests: ["Omar Badin Arenas"]
+    invitedGuests: ["Daniella Sucar"]
   },
-    "omar-badin": {
-    displayName: "Omar Badin Arenas",
+    "jesus-badin": {
+    displayName: "Jesus Badin",
     allowedGuests: 1,
-    invitedGuests: ["Omar Badin Arenas"]
+    invitedGuests: ["Jesus Badin"]
   },
-    "omar-badin": {
-    displayName: "Omar Badin Arenas",
+    "reanata-badin": {
+    displayName: "Renata Badin",
     allowedGuests: 1,
-    invitedGuests: ["Omar Badin Arenas"]
+    invitedGuests: ["Reanata Badin"]
   },
-    "omar-badin": {
-    displayName: "Omar Badin Arenas",
-    allowedGuests: 1,
-    invitedGuests: ["Omar Badin Arenas"]
+    "regina-badin": {
+    displayName: "Regina Badin & Anuar Abugaber",
+    allowedGuests: 2,
+    invitedGuests: ["Regina Badin", "Anuar Abugaber"]
   },
-    "omar-badin": {
-    displayName: "Omar Badin Arenas",
+    "blanca-ramirez": {
+    displayName: "Blanca Ramirez",
     allowedGuests: 1,
-    invitedGuests: ["Omar Badin Arenas"]
+    invitedGuests: ["Blanca Ramirez"]
   },
-    "omar-badin": {
-    displayName: "Omar Badin Arenas",
-    allowedGuests: 1,
-    invitedGuests: ["Omar Badin Arenas"]
+    "alejandra-arenas": {
+    displayName: "Alejandra Arenas & Alejandro Ramirez",
+    allowedGuests: 4,
+    invitedGuests: ["Alejandra Arenas","Alejandro Ramirez","Camila Ramirez", "Zoe Ramirez"]
   },
-    "omar-badin": {
-    displayName: "Omar Badin Arenas",
-    allowedGuests: 1,
-    invitedGuests: ["Omar Badin Arenas"]
+    "gerardo-arenas": {
+    displayName: "Gerardo Arenas & Greta Albarran",
+    allowedGuests: 3,
+    invitedGuests: ["Gerardo Arenas","Greta Albarran", "Paulina Arenas"]
   },  
+    "reanata-badin": {
+    displayName: "Renata Badin",
+    allowedGuests: 1,
+    invitedGuests: ["Reanata Badin"]
+  },
+      "reanata-badin": {
+    displayName: "Renata Badin",
+    allowedGuests: 1,
+    invitedGuests: ["Reanata Badin"]
+  },
+      "reanata-badin": {
+    displayName: "Renata Badin",
+    allowedGuests: 1,
+    invitedGuests: ["Reanata Badin"]
+  },
+      "reanata-badin": {
+    displayName: "Renata Badin",
+    allowedGuests: 1,
+    invitedGuests: ["Reanata Badin"]
+  },
+      "reanata-badin": {
+    displayName: "Renata Badin",
+    allowedGuests: 1,
+    invitedGuests: ["Reanata Badin"]
+  },
+      "reanata-badin": {
+    displayName: "Renata Badin",
+    allowedGuests: 1,
+    invitedGuests: ["Reanata Badin"]
+  },
+      "reanata-badin": {
+    displayName: "Renata Badin",
+    allowedGuests: 1,
+    invitedGuests: ["Reanata Badin"]
+  },
+      "reanata-badin": {
+    displayName: "Renata Badin",
+    allowedGuests: 1,
+    invitedGuests: ["Reanata Badin"]
+  },
+      "reanata-badin": {
+    displayName: "Renata Badin",
+    allowedGuests: 1,
+    invitedGuests: ["Reanata Badin"]
+  },
+      "reanata-badin": {
+    displayName: "Renata Badin",
+    allowedGuests: 1,
+    invitedGuests: ["Reanata Badin"]
+  },
+      "reanata-badin": {
+    displayName: "Renata Badin",
+    allowedGuests: 1,
+    invitedGuests: ["Reanata Badin"]
+  },
+      "reanata-badin": {
+    displayName: "Renata Badin",
+    allowedGuests: 1,
+    invitedGuests: ["Reanata Badin"]
+  },
+      "reanata-badin": {
+    displayName: "Renata Badin",
+    allowedGuests: 1,
+    invitedGuests: ["Reanata Badin"]
+  },
+      "reanata-badin": {
+    displayName: "Renata Badin",
+    allowedGuests: 1,
+    invitedGuests: ["Reanata Badin"]
+  },
+      "reanata-badin": {
+    displayName: "Renata Badin",
+    allowedGuests: 1,
+    invitedGuests: ["Reanata Badin"]
+  },
+      "reanata-badin": {
+    displayName: "Renata Badin",
+    allowedGuests: 1,
+    invitedGuests: ["Reanata Badin"]
+  },
+      "reanata-badin": {
+    displayName: "Renata Badin",
+    allowedGuests: 1,
+    invitedGuests: ["Reanata Badin"]
+  },
+      "reanata-badin": {
+    displayName: "Renata Badin",
+    allowedGuests: 1,
+    invitedGuests: ["Reanata Badin"]
+  },
+      "reanata-badin": {
+    displayName: "Renata Badin",
+    allowedGuests: 1,
+    invitedGuests: ["Reanata Badin"]
+  },
+      "reanata-badin": {
+    displayName: "Renata Badin",
+    allowedGuests: 1,
+    invitedGuests: ["Reanata Badin"]
+  },
+  
 };
 
 const params = new URLSearchParams(window.location.search);
