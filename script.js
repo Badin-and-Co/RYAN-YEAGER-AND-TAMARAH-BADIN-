@@ -355,7 +355,7 @@ const guests = {
     "olidia-castilla": {
     displayName: "Olidia Castilla & Virgilio Farias",
     allowedGuests: 2,
-    invitedGuests: ["Olidia Castilla", "Virgilio Farias]
+    invitedGuests: ["Olidia Castilla", "Virgilio Farias"]
   },
     "maribel-adarme": {
     displayName: "Raul & Maribel Adarme",
@@ -423,7 +423,7 @@ const guests = {
     invitedGuests: ["Abi Adigun", "Vivian Adigun"]
   },
     "claudia-rivero": {
-    displayName: "Claudia Rivero & Emmanuel Rodriguez,
+    displayName: "Claudia Rivero & Emmanuel Rodriguez",
     allowedGuests: 2,
     invitedGuests: ["Claudia Rivero", "Emmanuel Rodriguez"]
   },
