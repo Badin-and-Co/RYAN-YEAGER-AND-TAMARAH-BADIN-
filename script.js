@@ -1,8 +1,8 @@
 const guests = {
   "kay-kelly": {
-    displayName: "Kay & Jeff Kelly",
+    displayName: "Jeff & Kay Kelly",
     allowedGuests: 2,
-    invitedGuests: ["Kay Kelly", "Jeff Kelly"]
+    invitedGuests: ["Jeff Kelly", "Kay Kelly"]
   },
 
   "nicole-yeager": {
@@ -48,14 +48,14 @@ const guests = {
   },
 
   "patricia-badin": {
-    displayName: "Patricia & Omar Badin",
+    displayName: "Omar & Patricia Badin",
     allowedGuests: 2,
-    invitedGuests: ["Patricia Badin", "Omar Badin"]
+    invitedGuests: ["Omar Badin", "Patricia Badin"]
   },
   "samantha-szabo": {
-    displayName: "Samantha & Andrei Szabo",
+    displayName: "Andrei & Samantha Szabo",
     allowedGuests: 2,
-    invitedGuests: ["Samantha Szabo", "Andrei Szabo"]
+    invitedGuests: ["Andrei Szabo", "Samantha Szabo"]
   },
   "omar-badin": {
     displayName: "Omar Badin Arenas",
@@ -73,9 +73,9 @@ const guests = {
     invitedGuests: ["Rosy Cherit"]
   },
     "andrea-fautsch": {
-    displayName: "Andrea Fautsch & Fer Jaime",
+    displayName: "Fer Jaime & Andrea Fautsch",
     allowedGuests: 2,
-    invitedGuests: ["Andrea Fautsch", "Fer Jaime"]
+    invitedGuests: ["Fer Jaime", "Andrea Fautsch"]
   },
     "iker-badin": {
     displayName: "Iker Badin",
@@ -113,9 +113,9 @@ const guests = {
     invitedGuests: ["Renata Badin"]
   },
     "regina-badin": {
-    displayName: "Regina Badin & Anuar Abugaber",
+    displayName: "Anuar Abugaber & Regina Badin",
     allowedGuests: 2,
-    invitedGuests: ["Regina Badin", "Anuar Abugaber"]
+    invitedGuests: ["Anuar Abugaber", "Regina Badin"]
   },
     "blanca-ramirez": {
     displayName: "Blanca Ramirez",
@@ -123,9 +123,9 @@ const guests = {
     invitedGuests: ["Blanca Ramirez"]
   },
     "alejandra-arenas": {
-    displayName: "Alejandra Arenas & Alejandro Ramirez",
+    displayName: "Alejandro Ramirez & Alejandra Arenas",
     allowedGuests: 4,
-    invitedGuests: ["Alejandra Arenas","Alejandro Ramirez","Camila Ramirez", "Zoe Ramirez"]
+    invitedGuests: ["Alejandro Ramirez","Alejandra Arenas","Camila Ramirez", "Zoe Ramirez"]
   },
     "gerardo-arenas": {
     displayName: "Gerardo Arenas & Greta Albarran",
@@ -183,14 +183,14 @@ const guests = {
     invitedGuests: ["Andrea Hornbeak", "Darren Hornbeak"]
   },
     "kim-henderson": {
-    displayName: "Kim & Randy Henderson",
+    displayName: "Randy & Kim Henderson",
     allowedGuests: 2,
-    invitedGuests: ["Kim Henderson", "Randy Henderson"]
+    invitedGuests: ["Randy Henderson", "Kim Henderson"]
   },
     "janis-burkle": {
-    displayName: "Janis & Peter Burkle",
+    displayName: "Peter & Janis Burkle",
     allowedGuests: 2,
-    invitedGuests: ["Janis Burkle","Peter Burkle"]
+    invitedGuests: ["Peter Burkle","Janis Burkle"]
   },
     "greg-eversole": {
     displayName: "Greg & Susan Eversole",
@@ -218,9 +218,9 @@ const guests = {
     invitedGuests: ["Dara Kotyczca"]
   },
     "pam-salley": {
-    displayName: "Pam & Joe Salley",
+    displayName: "Joe & Pam Salley",
     allowedGuests: 2,
-    invitedGuests: ["Pam Salley", "Joe Salley"]
+    invitedGuests: ["Joe Salley", "Pam Salley"]
   },
     "joe-visy": {
     displayName: "Joe & Jean Visy",
