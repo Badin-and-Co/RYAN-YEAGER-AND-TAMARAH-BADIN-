@@ -724,7 +724,7 @@ window.addEventListener("load", revealOnScroll);
 
 
 function updateCountdown() {
-  const weddingDate = new Date("February 7, 2027 00:00:00").getTime();
+  const weddingDate = new Date("February 25, 2027 05:00:00").getTime();
 
   const daysEl = document.getElementById("days");
   const hoursEl = document.getElementById("hours");
