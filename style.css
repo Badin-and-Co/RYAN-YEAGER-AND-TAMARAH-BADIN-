@@ -1083,3 +1083,29 @@ soft wave movement inside cube
 .palette-row span::after {
   border-radius: inherit !important;
 }
+
+/* TOP WATERMARK LOGO */
+
+.top-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: -20px;
+  pointer-events: none;
+}
+
+.top-logo img {
+  width: min(92%, 1400px);
+  height: auto;
+
+  opacity: 0.08; /* 80% transparent */
+
+  display: block;
+
+  filter:
+    contrast(0.95)
+    brightness(1.02);
+
+  user-select: none;
+}
