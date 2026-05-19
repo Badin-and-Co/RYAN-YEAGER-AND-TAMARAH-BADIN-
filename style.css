@@ -1109,3 +1109,15 @@ soft wave movement inside cube
 
   user-select: none;
 }
+
+.zelle-qr {
+  width: 150px;
+  padding: 10px;
+  background: rgba(255,255,255,0.7);
+  border-radius: 24px;
+
+  display: block;
+  margin: 0 auto 20px;
+
+  box-shadow: 0 10px 30px rgba(75,68,56,0.08);
+}
