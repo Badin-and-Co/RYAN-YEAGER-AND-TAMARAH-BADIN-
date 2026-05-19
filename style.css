@@ -875,52 +875,7 @@ soft wave movement inside cube
 }
 
 */
-/* CLEAN TEXT COUNTDOWN - WORKS ON PHONE + LAPTOP */
 
-.countdown-section {
-  background: transparent !important;
-}
-
-.countdown-line {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: clamp(18px, 5vw, 58px);
-  margin-top: 32px;
-  flex-wrap: nowrap;
-}
-
-.countdown-item {
-  min-width: 70px;
-  text-align: center;
-}
-
-.countdown-item span {
-  display: block;
-  font-family: "Playfair Display", serif;
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: 400;
-  color: var(--deep);
-  line-height: 1;
-}
-
-.countdown-item p {
-  margin-top: 10px;
-  font-size: clamp(0.62rem, 1.3vw, 0.78rem);
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--taupe);
-}
-
-@media (max-width: 600px) {
-  .countdown-line {
-    gap: 16px;
-  }
-
-  .countdown-item {
-    min-width: 58px;
-  }
-}
   .palette-row span {
   width: 72px !important;
   height: 72px !important;
@@ -1056,5 +1011,53 @@ soft wave movement inside cube
     width: 72px !important;
     height: 72px !important;
     border-radius: 18px !important;
+  }
+}
+
+
+/* CLEAN TEXT COUNTDOWN - WORKS ON PHONE + LAPTOP */
+
+.countdown-section {
+  background: transparent !important;
+}
+
+.countdown-line {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: clamp(18px, 5vw, 58px);
+  margin-top: 32px;
+  flex-wrap: nowrap;
+}
+
+.countdown-item {
+  min-width: 70px;
+  text-align: center;
+}
+
+.countdown-item span {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 400;
+  color: var(--deep);
+  line-height: 1;
+}
+
+.countdown-item p {
+  margin-top: 10px;
+  font-size: clamp(0.62rem, 1.3vw, 0.78rem);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--taupe);
+}
+
+@media (max-width: 600px) {
+  .countdown-line {
+    gap: 16px;
+  }
+
+  .countdown-item {
+    min-width: 58px;
   }
 }
