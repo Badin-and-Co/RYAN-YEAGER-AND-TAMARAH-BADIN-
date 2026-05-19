@@ -1027,7 +1027,7 @@ soft wave movement inside cube
 
   display: grid !important;
   grid-template-columns: repeat(4, 1fr) !important;
-  column-gap: 35px !important;
+  column-gap: 18px !important;
   align-items: start !important;
   justify-items: center !important;
 }
@@ -1069,4 +1069,17 @@ soft wave movement inside cube
     font-size: 0.6rem !important;
     letter-spacing: 2px !important;
   }
+}
+
+/* REMOVE ALL GRAY CORNERS / SHADOWS */
+
+.palette-row span {
+  border: none !important;
+  box-shadow: none !important;
+  background-clip: padding-box !important;
+}
+
+.palette-row span::before,
+.palette-row span::after {
+  border-radius: inherit !important;
 }
