@@ -753,3 +753,27 @@ function updateCountdown() {
 
 updateCountdown();
 setInterval(updateCountdown, 1000);
+
+
+/* =========================
+   REGISTRY TOGGLE
+========================= */
+
+const registryToggle = document.getElementById("registryToggle");
+const registryContent = document.getElementById("registryContent");
+
+if (registryToggle && registryContent) {
+
+  registryToggle.addEventListener("click", () => {
+
+    registryContent.classList.toggle("hidden");
+
+    if (registryContent.classList.contains("hidden")) {
+      registryToggle.innerText = "View Gift Options";
+    } else {
+      registryToggle.innerText = "Hide Gift Options";
+    }
+
+  });
+
+}
