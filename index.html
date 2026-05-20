@@ -118,36 +118,54 @@
         <a href="https://maps.app.goo.gl/RCodrwhY5zis7H6h9" target="_blank" class="invitation-button">View Map</a>
       </section>
 
-      <!-- REGISTRY -->
-      <section id="registry" class="invitation-section reveal">
-        <p class="section-label">Registry</p>
-        <h2>With Love</h2>
+<!-- REGISTRY -->
+<section id="registry" class="invitation-section reveal">
+  <p class="section-label">Registry</p>
+  <h2>With Love</h2>
 
-        <p class="soft-copy">
-          Your presence is our greatest gift. If you would like to bless us further, these are our gift options.
-        </p>
+  <p class="soft-copy">
+    Your presence is our greatest gift. If you would like to bless us further, these are our gift options.
+  </p>
 
-        <div class="registry-cubes">
-          <div class="registry-cube">
-            <h3>Deposit</h3>
-            <p></p>
-		    <a href="https://www.zola.com/wedding/tamandryan/registry" target="_blank" class="invitation-button">Zola Registry</a>
-          </div>
+  <!-- TOGGLE BUTTON -->
+  <button type="button" class="registry-toggle" id="registryToggle">
+    View Gift Options
+  </button>
 
-          <div class="registry-cube">
-            <h3>Cash</h3>
-            <p>Cash gifts may be given in person on the wedding day.</p>
-          </div>
+  <!-- HIDDEN CONTENT -->
+  <div class="registry-cubes hidden" id="registryContent">
 
-		  <div class="registry-cube">
-  				<h3>Zelle</h3>
-  				<img src="qr.png" alt="Zelle QR Code" class="zelle-qr">
-  				<p>
-    				Zelle gifts may be sent to:<br>
-    				<strong>+1 (936) 286-1213</strong>
-  				</p>
-		  </div>
-      </section>
+    <div class="registry-cube">
+      <h3>Deposit</h3>
+
+      <a href="https://www.zola.com/wedding/tamandryan/registry"
+         target="_blank"
+         class="invitation-button">
+         Zola Registry
+      </a>
+    </div>
+
+    <div class="registry-cube">
+      <h3>Cash</h3>
+
+      <p>
+        Cash gifts may be given in person on the wedding day.
+      </p>
+    </div>
+
+    <div class="registry-cube">
+      <h3>Zelle</h3>
+
+      <img src="qr.png" alt="Zelle QR Code" class="zelle-qr">
+
+      <p>
+        Zelle gifts may be sent to:<br>
+        <strong>+1 (936) 286-1213</strong>
+      </p>
+    </div>
+
+  </div>
+</section>
      <!-- Add this section when yu have hotels 
 	
       <section id="venue" class="invitation-section reveal">
@@ -157,9 +175,9 @@
           13570 Forest Ln<br>
           Montgomery, Texas, 77356
         </p>
-		-->
 
 	 </section>
+			-->
 
 	<section class="invitation-section reveal countdown-section">
   		<p class="section-label">Countdown</p>
