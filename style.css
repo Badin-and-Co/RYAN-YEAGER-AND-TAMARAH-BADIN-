@@ -1327,3 +1327,22 @@ soft wave movement inside cube
   z-index: 4;
   padding-top: 190px !important;
 }
+
+.intro-message {
+  max-width: 620px;
+
+  margin-top: 55px; /* THIS creates separation */
+
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+
+  line-height: 1.9;
+
+  font-size: 0.9rem;
+
+  letter-spacing: 1px;
+
+  color: var(--muted);
+}
