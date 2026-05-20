@@ -1181,3 +1181,16 @@ soft wave movement inside cube
     width: 100%;
   }
 }
+
+/* REGISTRY TOGGLE */
+
+.registry-toggle {
+  margin-top: 30px;
+}
+
+/* SMOOTHER APPEAR */
+
+#registryContent {
+  margin-top: 35px;
+  transition: all 0.5s ease;
+}
