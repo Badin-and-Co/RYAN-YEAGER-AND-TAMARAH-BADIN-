@@ -713,168 +713,6 @@ button {
     border-radius: 9px;
   }
 }
-/*
-   =========================
-   CLEAN STRAIGHT PALETTE CUBES
-   SOFT COLOR WAVE INSIDE
-========================= 
-
-.palette-lines {
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-  margin-top: 35px;
-  align-items: center;
-}
-
-.palette-row {
-  display: flex;
-  justify-content: center;
-  gap: 14px;
-  flex-wrap: wrap;
-}
-
-.palette-row span {
-  width: 72px !important;
-  height: 72px !important;
-  display: block !important;
-  position: relative !important;
-  overflow: hidden !important;
-
-  border: none !important;
-  outline: none !important;
-  box-shadow: 0 10px 22px rgba(75,68,56,0.10) !important;
-  border-radius: 18px !important;
-  transform: none !important;
-}
-
-remove ALL old dots/grain 
-  
-.palette-row span::before {
-  content: "" !important;
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse at 25% 20%, rgba(255,255,255,0.62), transparent 42%),
-    radial-gradient(ellipse at 80% 75%, rgba(0,0,0,0.12), transparent 48%),
-    linear-gradient(
-      135deg,
-      rgba(255,255,255,0.55) 0%,
-      transparent 28%,
-      rgba(255,255,255,0.18) 48%,
-      transparent 68%,
-      rgba(0,0,0,0.10) 100%
-    );
-  pointer-events: none;
-  mix-blend-mode: soft-light;
-}
-
-soft wave movement inside cube 
-.palette-row span::after {
-  content: "" !important;
-  position: absolute;
-  inset: -35%;
-  background:
-    radial-gradient(ellipse at center, rgba(255,255,255,0.48), transparent 55%);
-  transform: rotate(-18deg);
-  pointer-events: none;
-  mix-blend-mode: overlay;
-  opacity: 0.75;
-}
- =========================
-   MOVING COLOR WAVE
-========================= 
-
-.palette-row span {
-  width: 72px !important;
-  height: 72px !important;
-  display: block !important;
-  position: relative !important;
-  overflow: hidden !important;
-
-  border: none !important;
-  outline: none !important;
-  border-radius: 18px !important;
-
-  box-shadow:
-    0 10px 22px rgba(75,68,56,0.10) !important;
-}
-
- base lighting 
-.palette-row span::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background:
-    radial-gradient(
-      ellipse at 25% 20%,
-      rgba(255,255,255,0.55),
-      transparent 42%
-    ),
-    radial-gradient(
-      ellipse at 80% 75%,
-      rgba(0,0,0,0.10),
-      transparent 48%
-    );
-
-  mix-blend-mode: soft-light;
-  pointer-events: none;
-  z-index: 2;
-}
-
- MOVING WAVE 
-.palette-row span::after {
-  content: "";
-  position: absolute;
-
-  width: 180%;
-  height: 180%;
-
-  left: -40%;
-  top: -40%;
-
-  background:
-    radial-gradient(
-      ellipse at center,
-      rgba(255,255,255,0.45) 0%,
-      rgba(255,255,255,0.18) 28%,
-      transparent 65%
-    );
-
-  mix-blend-mode: overlay;
-  opacity: 0.9;
-
-  animation: softWaveMove 7s ease-in-out infinite alternate;
-
-  z-index: 3;
-}
-
- smooth floating movement 
-@keyframes softWaveMove {
-  0% {
-    transform:
-      translate(-8%, -6%)
-      rotate(0deg)
-      scale(1);
-  }
-
-  50% {
-    transform:
-      translate(6%, 4%)
-      rotate(12deg)
-      scale(1.08);
-  }
-
-  100% {
-    transform:
-      translate(-4%, 8%)
-      rotate(-10deg)
-      scale(1.02);
-  }
-}
-
-*/
 
   .palette-row span {
   width: 72px !important;
@@ -1357,10 +1195,13 @@ soft wave movement inside cube
   text-align: center;
   font-size: 0.95rem;
   line-height: 1.8;
-  color: #4b3324;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.3px;
+  max-width: 520px;
+  margin: 0 auto;
+  color: var(--muted);
+  line-height: 1.7;
 }
