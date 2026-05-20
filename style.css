@@ -1346,3 +1346,8 @@ soft wave movement inside cube
 
   color: var(--muted);
 }
+
+
+.intro-spacing {
+  height: 70px;
+}
