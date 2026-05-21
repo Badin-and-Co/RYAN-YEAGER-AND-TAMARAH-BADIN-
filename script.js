@@ -477,6 +477,11 @@ const guests = {
     allowedGuests: 2,
     invitedGuests: ["Bani Muñoz", "Viris Muñoz"]
   }, 
+    "cristina-ponce": {
+    displayName: "Roberto & Cristina Ponce",
+    allowedGuests: 2,
+    invitedGuests: ["Cristina Ponce", "Roberto Ponce"]
+  },
   
 };
 
