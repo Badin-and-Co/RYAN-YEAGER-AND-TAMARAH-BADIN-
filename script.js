@@ -418,9 +418,9 @@ const guests = {
     invitedGuests: ["Daniel Velazquez","Maricarmen Velazquez"]
   },
     "abi-adigun": {
-    displayName: "Abi & Vivian Adigun",
+    displayName: "Abi & Vivien Adigun",
     allowedGuests: 2,
-    invitedGuests: ["Abi Adigun", "Vivian Adigun"]
+    invitedGuests: ["Abi Adigun", "Vivien Adigun"]
   },
     "claudia-rivero": {
     displayName: "Claudia Rivero & Emmanuel Rodriguez",
