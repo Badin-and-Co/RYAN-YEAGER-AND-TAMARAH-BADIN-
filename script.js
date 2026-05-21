@@ -388,9 +388,9 @@ const guests = {
     invitedGuests: ["Sam Julio Escalante"]
   },
     "santiago-aguero": {
-    displayName: "Santiago Agüero & Regina Chavela",
+    displayName: "Santiago Agüero",
     allowedGuests: 2,
-    invitedGuests: ["Santiago Agüero","Regina Chavela"]
+    invitedGuests: ["Santiago Agüero","Plus one"]
   },
     "caro-delarosa": {
     displayName: "Caro De La Rosa",
@@ -449,7 +449,7 @@ const guests = {
   },
     "jack-ocampo": {
     displayName: "Jack & Andrea Brindis",
-    allowedGuests: 1,
+    allowedGuests: 2,
     invitedGuests: ["Jack Brindis", "Andrea Brindis"]
   },
     "andrea-gali": {
