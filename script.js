@@ -518,9 +518,14 @@ const guests = {
     invitedGuests: ["Gibran Hadad", "Patsy Hadad"]
   },
     "adriana-ruiz": {
-    displayName: "Jel & Adriana Ruiz",
+    displayName: "Joel & Adriana Ruiz",
     allowedGuests: 2,
     invitedGuests: ["Joel Ruiz", "Adriana Ruiz"]
+  },
+    "gladys-araujo": {
+    displayName: "Osvaldo & Gladys Araujo",
+    allowedGuests: 2,
+    invitedGuests: ["Osvaldo Araujo", "Gladys Araujo"]
   },
 };
 
