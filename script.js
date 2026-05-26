@@ -532,6 +532,11 @@ const guests = {
     allowedGuests: 2,
     invitedGuests: ["Laura Cherit", "Plus One"]
   },
+    "paty-sabo": {
+    displayName: "Patricia Szabo",
+    allowedGuests: 1,
+    invitedGuests: ["Patricia Szabo"]
+  },
   
 };
 
